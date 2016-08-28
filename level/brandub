@@ -1,0 +1,16 @@
+# Größe des Spielbretts 	 <int>
+SIZE := 7
+# Zeichen für ein Leeres Spielfeld 	 <char>
+EMPTY := "-"
+
+# Bezeichnet die Ge-X-ten Felder in der Mitte und den Ecken
+# <char>@[(<int>,<int>),(<int>,<int>),...,(<int>,<int>)]
+DECORATE := "X"@[(3,3),(0,0),(0,6),(6,0),(6,6)]
+
+# Der angreifend Spiele (ohne König) 
+PLAYER_0 := "O"@[(3,0),(3,1),(3,5),(3,6),(0,3),(1,3),(5,3),(6,3)]
+
+# Der verteidigende Spiele (mit König)
+PLAYER_1 := "#"@[(2,3),(3,2),(4,3),(3,4)]
+# König 	 <char>@(<int>,<int>)
+KING := "+"@(3,3)
